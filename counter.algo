@@ -1,0 +1,24 @@
+ALGORITHM counter
+VAR
+    str:STRING
+    word-len:INTEGER :=0
+    vow-len:INTEGER :=0
+    i:INTEGER
+BEGIN
+    FOR i FROM 0 TO i = "." STEP 1 DO
+        write("enter a character")
+    END_FOR
+
+    read (str)  
+     WHILE(str[i] <> ".") DO
+      IF (str[i] = " ") THEN
+            wrl_len = wrl_len +1
+        END_IF
+         IF (str[i] = "a" "i" "o" "e" "u" "y") THEN
+            voy_len = voy_len +1
+        END_IF
+
+        i++
+
+     END_WHILE
+END

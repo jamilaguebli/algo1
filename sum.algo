@@ -1,0 +1,27 @@
+ALGORITHM somme
+VAR
+   set1 : ARRAY_OF INTEGER[10];
+    set2 : ARRAY_OF INTEGER [10];
+    tab :ARRAY_OF INTEGER [20];
+    sum : INTEGER := 0
+    found : BOOLEAN
+    i,j : INTEGER
+BEGIN
+    tab := concat (set1,set2)
+    
+    FOR i FROM 0 TO tab.length STEP 1 DO
+        found := false
+
+        FOR j FROM 0 TO tab.length STEP 1  DO
+            IF (tab[i] = tab[j] && i<>j) THEN
+                found := true
+            END_IF
+        END_FOR
+
+        if(found := false){
+            sum := sum + tab[i]
+        }
+
+    END_FOR
+
+END
